@@ -132,7 +132,7 @@ margin-right: 5%;
     font-weight: 600;
     font-size: .8em;
     font-style: normal;
-    box-shadow:  0px 0px 10px 1px rgba(192, 255, 2, 0.478);} 
+    box-shadow:  0px 0px 7px 1px rgba(192, 255, 2, 0.478);} 
 
 .poppins{
   font-family: "Poppins", sans-serif;
@@ -148,4 +148,24 @@ margin-right: 5%;
   }
   .inlinee{
     display: inline-block;
+  }
+
+  .techshadow{
+    box-shadow:  0px 0px 3px 1px rgba(255, 255, 255, 0.478);
+  }
+
+  .flexd{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+ .imgflex{
+display: flex;
+  justify-content: end;
+flex-wrap: wrap;
+  }
+
+  .vertical-text>span {
+    display: block;
   }
