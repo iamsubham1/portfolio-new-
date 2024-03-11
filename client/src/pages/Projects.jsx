@@ -9,7 +9,7 @@ const Projects = () => {
 
     return (
         <div className='mainWrapper flex justify-center items-center' >
-            <div className='max-w-[3vw] max-h-[20vh] sidebar fixed right-[23vw] flex-col text-center vertical-text text-black wrapppp poppins bg-[#CFFF44]'>
+            <div className='max-w-[3vw] max-h-[20vh] sidebar fixed right-[23vw] flex-col text-center vertical-text wrapppp poppins bg-[#CFFF44]'>
                 <span>W</span>
                 <span>O</span>
                 <span>R</span>

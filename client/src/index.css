@@ -10,10 +10,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  cursor: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(183, 183, 183, 0.478);
+
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; 
 }

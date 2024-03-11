@@ -126,6 +126,7 @@ margin-right: 5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 600 !important;
   }
 
   .buttonfont{  font-family: "Poppins", sans-serif;
@@ -169,3 +170,16 @@ flex-wrap: wrap;
   .vertical-text>span {
     display: block;
   }
+
+  .contactCardShadow{
+    left:-0.5vw;
+    border:2px rgba(255, 255, 255, 0.478) solid;
+    border-top-right-radius: 2%; 
+    border-bottom-right-radius: 2%;
+      box-shadow:  1px 0px 5px 1px rgba(255, 255, 255, 0.478);
+
+  }
+.envelope{
+  border-top-right-radius: 2%; 
+  border-bottom-right-radius: 2%;
+}
