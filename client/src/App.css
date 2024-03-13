@@ -176,7 +176,7 @@ flex-wrap: wrap;
     border:2px rgba(255, 255, 255, 0.478) solid;
     border-top-right-radius: 2%; 
     border-bottom-right-radius: 2%;
-      box-shadow:  1px 0px 5px 1px rgba(255, 255, 255, 0.478);
+      box-shadow:  1px 0px 10px 2px rgba(255, 255, 255, 0.478);
 
   }
 .envelope{

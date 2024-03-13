@@ -48,8 +48,7 @@
     const circles = document.querySelectorAll(".circle");
 
     const colors = [
-      "#787878", "#797a77", "#7c7e73", "#81856e", "#868e68", "#8b9860", "#90a257", "#95ac4d", "#98b543", "#9bbc39", "#9cc132", "#9dc32f"
-    ];
+      " #CFFF44 "];
 
     circles.forEach(function (circle, index) {
       circle.x = 0;
@@ -68,21 +67,26 @@
       let x = coords.x;
       let y = coords.y;
 
-      circles.forEach(function (circle, index) {
-        circle.style.left = x - 12 + "px";
-        circle.style.top = y - 12 + "px";
+      setTimeout(() => {
 
-        circle.style.scale = (circles.length - index) / circles.length;
+        circles.forEach(function (circle, index) {
+          circle.style.left = x - 12 + "px";
+          circle.style.top = y - 12 + "px";
 
-        circle.x = x;
-        circle.y = y;
+          circle.style.scale = (circles.length - index) / circles.length;
 
-        const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.3;
-        y += (nextCircle.y - y) * 0.3;
-      });
+          circle.x = x;
+          circle.y = y;
 
-      requestAnimationFrame(animateCircles);
+          const nextCircle = circles[index + 1] || circles[0];
+          x += (nextCircle.x - x) * 0.3;
+          y += (nextCircle.y - y) * 0.3;
+        });
+
+        requestAnimationFrame(animateCircles);
+      }, 15);
+
+
     }
 
     animateCircles();
