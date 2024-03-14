@@ -16,7 +16,7 @@ const Navbar = ({ activeSection }) => {
     return (
         <div id='navbarContainer' className={navbarClass}>
             <ul>
-                {["Home", "About", "Projects", "Contact"].map((linkName) => {
+                {["Home", "About", "Projects", "Contact",].map((linkName) => {
                     const isAboutActiveAndNotCurrentLink = activeLink === "About" && activeLink !== linkName;
 
                     const linkStyle = {

@@ -1,11 +1,11 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { getColors } from '../utils/generateColors';
 import connect from '../assets/connect.svg'
 import noteBook from '../assets/notebook.svg'
 
 
 const Projects = () => {
-    const techStack = ["HTML", "CSS", "React", "Node.js", "Express", "MongoDb", "My-Sql", "Docker", "Git", "AWS"];
+    const techStack = ["HTML", "CSS", "JS", "React", "Node.js", "Express", "MongoDb", "Docker", "Git", "AWS"];
 
     return (
         <div className='mainWrapper flex justify-center items-center' >
@@ -36,7 +36,7 @@ const Projects = () => {
                         <p className='text-[#cfcfcf]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ligula at odio semper faucibus. Sed ullamcorper velit non consectetur pharetra. Intege gula at odio semper faucibus. Sed ullamcorper velit non consectetur pharetra. </p>
                     </div>
                 </div>
-                <button className='mb-4 px-2 py-1.5 buttonfont glow-on-hover rounded-md'> More Projects</button>
+                <button className='mb-4 px-2 py-1.5 buttonfont glow-on-hover rounded-md'><a href='https://github.com/iamsubham1'>More Projects ...</a></button>
                 <div className=' border-2 border-[#99BE2E] rounded-xl shadow flex-col max-h-[28%] max-w-[60%] text-center flexd'>
 
                     <h2 className=' text-2xl text-[#99BE2E] poppins'>Tech Stack</h2>
