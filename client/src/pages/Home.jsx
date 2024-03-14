@@ -3,10 +3,12 @@ import SocialMediaSideBar from '../components/SocialMediaSideBar';
 const Home = () => {
 
 
-    return (
+    return (<>
         <div className='Homepage' id='homepage'>
             <SocialMediaSideBar />
         </div>
+
+    </>
     );
 };
 

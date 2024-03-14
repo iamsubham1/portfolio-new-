@@ -36,7 +36,7 @@ const Projects = () => {
                         <p className='text-[#cfcfcf]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at ligula at odio semper faucibus. Sed ullamcorper velit non consectetur pharetra. Intege gula at odio semper faucibus. Sed ullamcorper velit non consectetur pharetra. </p>
                     </div>
                 </div>
-                <button className='mb-4 bg-[#CFFF44] px-2 py-1.5 rounded-md buttonfont '> More Projects</button>
+                <button className='mb-4 px-2 py-1.5 buttonfont glow-on-hover rounded-md'> More Projects</button>
                 <div className=' border-2 border-[#99BE2E] rounded-xl shadow flex-col max-h-[28%] max-w-[60%] text-center flexd'>
 
                     <h2 className=' text-2xl text-[#99BE2E] poppins'>Tech Stack</h2>
