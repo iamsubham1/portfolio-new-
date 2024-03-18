@@ -29,7 +29,7 @@ const Container = () => {
         <>
             <Navbar activeSection={activeSection} />
             <div id='container1'>
-                <div id='Home' className='Home section bg-[#090909]'>
+                <div id='Home' className='Home section backgroundAnimation '>
                     <Home />
                 </div>
                 <div id='About' className='section bg-[#9DC32F]'>

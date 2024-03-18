@@ -308,6 +308,51 @@ top: 0;
   bottom: 0;
 }
 
-.form{
 
+
+
+
+@keyframes bganimation
+{
+0%   {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+      50% {
+           background-position: 
+               150% 100%,
+               -200% 100%,
+               100% 0%,
+               0% 100%;
+      }
+      100% {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+}
+
+
+.backgroundAnimation{
+    background: 
+        radial-gradient(ellipse at center, rgba(0, 183, 255, 0.282) 0%, rgba(0,0,0,0) 70%), 
+        radial-gradient(ellipse at center, rgba(230, 0, 255, 0.149) 0%, rgba(0,0,0,0) 70%), 
+        radial-gradient(ellipse at center, rgba(125, 239, 3, 0.142) 0%, rgba(0,0,0,0) 70%)
+        #000000;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+    
+    animation:bganimation 30s infinite;
 }
