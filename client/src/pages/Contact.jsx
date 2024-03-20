@@ -39,19 +39,17 @@ const Contact = () => {
 
                 </div>
 
-                <form onSubmit={handleSubmit} className='form h-[80%] bg-slate-500 flex flex-col place-self-center w-[40%] justify-evenly p-4 rounded-md' >
+                <form onSubmit={handleSubmit} className='form h-[80%] bg-[#f1f1f1] flex flex-col place-self-center w-[40%] justify-evenly p-4 rounded-md' >
                     <h2 className=' text-3xl text-center'>Reach me out</h2>
-                    <section className='flex flex-col'>
-                        <label htmlFor="emailOrPhone">Email/Phone:</label>
-                        <input
-                            type="text"
-                            id="emailOrPhone"
-                            name="emailOrPhone"
-                            value={formData.emailOrPhone}
-                            onChange={handleChange}
-                            className='py-1'
-                        />
-                    </section>
+                    <input
+                        type="text"
+                        id="emailOrPhone"
+                        name="emailOrPhone"
+                        value={formData.emailOrPhone}
+                        onChange={handleChange}
+                        className='py-1 rounded-md bg-[#f1f1f1] '
+                        style={{ border: '2px solid black', color: 'black' }}
+                    />
 
 
                     <section className='flex flex-col'>
@@ -61,7 +59,9 @@ const Contact = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            className='py-2'
+
+                            className='py-1 rounded-md bg-[#f1f1f1] '
+                            style={{ border: '2px solid black', color: 'black' }}
                         /></section>
 
 
