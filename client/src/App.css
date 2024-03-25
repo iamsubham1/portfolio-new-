@@ -356,3 +356,21 @@ top: 0;
     
     animation:bganimation 30s infinite;
 }
+
+@media only screen and (max-width: 575.98px) {
+  #navbarContainer{
+   display: none;
+    }
+  .mobileTexth2{
+    font-size: 2rem;
+  }.mobileTexth1{
+    font-size: 4rem;
+  }
+  .sidebarMobile{
+  flex-direction: row;
+  margin-left: 0%;
+  top:60%;
+  max-width: 100vw;
+  padding: 15%;
+  }
+  }

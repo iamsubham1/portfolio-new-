@@ -41,17 +41,19 @@ const Contact = () => {
 
                 <form onSubmit={handleSubmit} className='form h-[80%] bg-[#f1f1f1] flex flex-col place-self-center w-[40%] justify-evenly p-4 rounded-md' >
                     <h2 className=' text-3xl text-center'>Reach me out</h2>
-                    <input
-                        type="text"
-                        id="emailOrPhone"
-                        name="emailOrPhone"
-                        value={formData.emailOrPhone}
-                        onChange={handleChange}
-                        className='py-1 rounded-md bg-[#f1f1f1] '
-                        style={{ border: '2px solid black', color: 'black' }}
-                    />
+                    <section className='flex flex-col'>
+                        <label htmlFor="text">Email</label>
+                        <input
+                            type="text"
+                            id="emailOrPhone"
+                            name="emailOrPhone"
+                            value={formData.emailOrPhone}
+                            onChange={handleChange}
+                            className='py-1 rounded-md bg-[#f1f1f1] '
+                            style={{ border: '2px solid black', color: 'black' }}
+                        />
 
-
+                    </section>
                     <section className='flex flex-col'>
                         <label htmlFor="message">Message:</label>
                         <input
@@ -65,7 +67,7 @@ const Contact = () => {
                         /></section>
 
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" className='rounded-md border-2 border-black max-w-[30%] px-2 py-1 self-center'>Submit</button>
                 </form>
 
 
