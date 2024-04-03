@@ -225,10 +225,10 @@ flex-wrap: wrap;
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
+  filter: blur(10px);
+  width: calc(100% + 3px);
   height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
+  animation: glowing 30s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
   
@@ -238,7 +238,7 @@ flex-wrap: wrap;
   color: #000
 }
 
-.glow-on-hover:hover:before {
+.glow-on-hover:before {
   opacity: 1;
 }
 
@@ -307,55 +307,56 @@ top: 0;
   top: 0;
   bottom: 0;
 }
+@keyframes bganimation {
+  0% {
+      background-position: 
+          -50% -50%,
+          200% 200%,
+          -100% 200%,
+          200% -100%;
+  }
+  50% {
+      background-position: 
+          150% 100%,
+          -200% 100%,
+          100% 0%,
+          0% 100%;
+  }
+  100% {
+      background-position: 
+          -50% -50%,
+          200% 200%,
+          -100% 200%,
+          200% -100%;
+  }
+}
 
-
-
-
-
-@keyframes bganimation
-{
-0%   {
-           background-position: 
-               -100% -100%,
-               200% 200%,
-               -100% 200%,
-               200% -100%;
-      }
-      50% {
-           background-position: 
-               150% 100%,
-               -200% 100%,
-               100% 0%,
-               0% 100%;
-      }
-      100% {
-           background-position: 
-               -100% -100%,
-               200% 200%,
-               -100% 200%,
-               200% -100%;
-      }
+.backgroundAnimation {
+  background: 
+      radial-gradient(ellipse at center, rgba(0, 183, 255, 0.282) 0%, rgba(0,0,0,0) 70%), 
+      radial-gradient(ellipse at center, rgba(230, 0, 255, 0.149) 0%, rgba(0,0,0,0) 70%), 
+      radial-gradient(ellipse at center, rgba(125, 239, 3, 0.142) 0%, rgba(0,0,0,0) 70%),
+      #000000;
+  background-repeat: 
+      no-repeat, 
+      no-repeat, 
+      no-repeat;
+  background-size: 
+      900px 900px,
+      900px 900px,
+      900px 900px;
+  background-attachment: 
+      fixed,
+      fixed,
+      fixed;
+  
+  animation: bganimation 30s infinite;
 }
 
 
-.backgroundAnimation{
-    background: 
-        radial-gradient(ellipse at center, rgba(0, 183, 255, 0.282) 0%, rgba(0,0,0,0) 70%), 
-        radial-gradient(ellipse at center, rgba(230, 0, 255, 0.149) 0%, rgba(0,0,0,0) 70%), 
-        radial-gradient(ellipse at center, rgba(125, 239, 3, 0.142) 0%, rgba(0,0,0,0) 70%)
-        #000000;
-    background-repeat: 
-        no-repeat, 
-        no-repeat, 
-        no-repeat;
-    background-size: 
-        900px 900px,
-        900px 900px,
-        900px 900px;
-    background-attachment: fixed;
-    
-    animation:bganimation 30s infinite;
-}
+
+
+
 
 @media only screen and (max-width: 575.98px) {
   #navbarContainer{
